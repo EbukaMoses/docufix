@@ -58,9 +58,31 @@
 
     }
 
-
-
-
+      #topic {
+          width: 70%;
+          background-color: #141460;
+          padding: 0.5% 2%;
+          color: #fff;
+          border-radius: 15px;
+          box-shadow: 0 2px 5px #000;
+      }
+    topic::before{
+        pointer-events:none;
+        position:absolute;
+        z-index: 1;
+        content:'';
+        border-style:solid;    
+        top:calc(23% -32px);
+        left: 40px;
+        top: 44px;
+        transform: rotate(270deg);
+        border-width:11px 11px 11px 0;
+        border-color:transparent #141460 transparent transparent;
+    }
+      #thumbnail {
+          padding: 1% 3% 3% 3%;
+           box-shadow: 0 2px 5px #000;
+      }
 
     /*----------------------------------------NAVBAR AND FOOTER css-----------------------------------------------*/
 
@@ -243,9 +265,9 @@
   <div class="container" style="line-height: 40px;">
     <div class="row mt-4 suru">
       <div class="col-12 mt-5 clear-fix">
-
+        
         <div>
-          <h4 class=" abt_headingtext-uppercase abt_heading"><strong>Why Use Docufix?</strong></h4>
+          <h4 class=" abt_heading abt_heading"  id="topic"><strong>Why Use Docufix?</strong></h4>
           <p style="text-align: justify;">Docufix is one of the leading application for teachers, students, publishers,
             and universities who need to detect any form of plagiarism in their content, essay or document and to
             compare large amount of files.
@@ -254,7 +276,7 @@
         </div>
         <br>
         <div class="tara">
-          <h4 class="bara"><strong>Features: Comparing, Duplicates and Plagiarism Checker</strong></h4>
+          <h4 class="bara" id="topic"><strong>Features: Comparing, Duplicates and Plagiarism Checker</strong></h4>
           <p style="text-align: justify;">Unlike other applications which just compare files or check the plagiarism, <a
               href="index.html" class="text-primary">Docufix</a> works both for comparing large amount of files and as a
             plagiarism checker. It can be extremely tedious trying to compare
@@ -267,7 +289,7 @@
         </div>
         <br>
         <div class="mara">
-          <h4 class="fara"><strong>Free Version</strong></h4>
+          <h4 class="fara" id="topic"><strong>Free Version</strong></h4>
           <p style="text-align: justify;">If you look through its obvious that most reliable softwares or applications
             for plagiarism are paid for, you can't get that quality you desire without paying an amount
             for it. What make Docufix UNIQUE among others is the fact that you can get that same outstanding quality
@@ -277,7 +299,7 @@
         </div>
         <br>
         <div class="sara">
-          <h4><strong>Docufix For Students</strong></h4>
+          <h4 id="topic"><strong>Docufix For Students</strong></h4>
           <p style="text-align: justify;">Docufix is designed for students to make school work easier. Sometimes school
             work, assignments or projects could be assigned last minute and must be delivered. With <a href="index.html"
               class="text-primary"> Docufix</a>, it would be easier to know if your work meets the standard
@@ -286,7 +308,7 @@
         </div>
         <br>
         <div class="dara">
-          <h4 class="cara"><strong>Docufix For Teachers</strong></h4>
+          <h4 class="cara" id="topic"><strong>Docufix For Teachers</strong></h4>
           <p style="text-align: justify;">As a professor or teacher, Sometimes it could be tedious sinking in deadlines
             without no help. Moving at this rate it could be easy to overlook your students who have definitely borrowed
             more than words from an online source in other to meet up with deadlines.
@@ -297,7 +319,7 @@
         </div>
         <br>
         <div class="zara">
-          <h4 class="vara"><strong>Docufix For Universities</strong></h4>
+          <h4 class="vara" id="topic"><strong>Docufix For Universities</strong></h4>
           <p style="text-align: justify;">Our Application is able to compare school work against other files or document
             and brings the result instantly and in percentage. With <a href="index.html"
               class="text-primary">Docufix</a> it is easy for any faculty member to compare large amount of files,
